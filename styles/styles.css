@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: chocolate;
+}
+
+p {
+  text-align: center;
+}
+
+/* general container class to give access to flex controls */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25vw;
+  height: 100vh;
+  background-color: rgb(255, 184, 97);
+  margin: 0 auto;
+}
+/* the object we are listening for the scroll event in JS*/
+textarea {
+  resize: none;
+  display: block;
+  width: 5rem;
+  height: 8rem;
+  font-size: 3rem;
+  border: none;
+  margin: 1rem auto;
+  background-color: rgba(210, 105, 30, 0.562);
+  cursor: pointer;
+}
+
+#log {
+  color: rgb(2, 68, 2);
+}
+
+/* the image container */
+#div2 {
+  position: relative;
+  width: 75%;
+  height: 75vw;
+  border: 2px solid black;
+  background-color: rgba(red, green, blue, 0);
+}
+
+/* image we are transforming is set to be positioned centrally
+   so that it covers its parent container without being deformed.
+   We use object-fit and abject-postion to do this */
+#img1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}

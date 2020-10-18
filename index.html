@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll Testing</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <div id="div1" class="container">
+      <p>Scroll the textarea element below to initiate the scroll function</p>
+      <!-- this is the element we watch to be scrolled-->
+      <textarea name="textArea1" id="textArea1">
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20</textarea
+      >
+      <!-- we update the text here to show the scrolled value-->
+      <p id="log">Scroll position: 0</p>
+      <p id="log2">Scroll position: 0</p>
+      <!-- this container holds the images we are transforming-->
+      <div id="div2">
+        <img
+          id="img1"
+          src="../images/saltandpepperspoons.jpg"
+          alt="salt-and-pepper-spoons"
+        />
+      </div>
+    </div>
+    <div id="div3" class="container">
+      <p>Paragraph 1 in div 2</p>
+    </div>
+    <div id="div4" class="container">
+      <p>Pragraph 1 in div 3</p>
+    </div>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
