@@ -1,7 +1,6 @@
 // variable to store the textarea element. We're targeting this element
 // rather than the window object, just for experimental purposes
 const textarea = document.querySelector("textarea");
-console.log(textarea)
 
 // variables to store html elements in which we will show
 // the number of pixels scrolled from zero
