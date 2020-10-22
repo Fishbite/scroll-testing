@@ -35,11 +35,17 @@ function logScroll(e) {
 
   // scale the image stored in the variable 'img1
   img1.style.transform = `translate3d(0, 0px, 0) scale( ${
-    100 + scroll / 100
+    100 + scroll / 50
   }%)`;
 
   // change the opacitity of the image
   // 955 is the number of pixels needed to scroll from top to bottom of the textarea
   // NB: couldn't chain this in the transform like it is done in jQuery!
-  img1.style.opacity = `${1 - scroll / 955}`;
+  img1.style.opacity = `${1 - scroll / 477}`;
+
+  // img2
+  img2.style.transform = `translate3d(0, 0px, 0) scale( ${
+    100 + scroll / 100
+  }%)`;
+  img2.style.opacity = `${1 - (scroll -477)/ 477}`;
 }
